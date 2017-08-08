@@ -1,0 +1,22 @@
+<?php
+
+// edit these values and rename it to
+// config.conf.php
+
+Nether\Option::Set([
+
+	'FacebookAPI' => [
+		'app_id'                => 'YOUR_APP_ID',
+		'app_secret'            => 'YOUR_APP_SECRET',
+		'default_graph_version' => 'v2.10',
+		'default_access_token'  => 'YOUR_APP_DEFAULT_TOKEN_MAYBE_DONT_NEED'
+	],
+
+	'nether-database-connections' => [
+		'Default' => [
+			'Type'     => 'sqlite',
+			'Database' => sprintf('%s/database.sqlite3',ProjectRoot)
+		]
+	]
+
+]);
